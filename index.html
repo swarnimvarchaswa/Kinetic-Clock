@@ -6,532 +6,670 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock made with Clocks</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    gridTemplateColumns: {
+                        // Simple 16 column grid
+                        '16': 'repeat(16, minmax(0, 1fr))',
+                    }
+                }
+            }
+        }
+    </script>
+
+
     <!-- stylesheet -->
     <link rel="Stylesheet" href="style.css">
     <script src="index.js"></script>
+
 </head>
 
 <body>
-    <div class="clock-box">
-        <div class="clock-row">
-            <!-- row1.............................................................. -->
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a11" class="hand1"></div>
-                <div id="b11" class="hand2"></div>
+    <div class="bg-black h-svh w-svw flex items-center justify-center p-8">
+
+        <div id="box" class="grid gap-1">
+            <div id="box1" class="grid gap-1">
+                <!-- row1............................................................. -->
+                <!-- 1 -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="absolute w-[7%] h-[7%] bg-white rounded-full top-[46.5%] left-[46.5%]"></div>
+                        <div id="a11" class="hand1 "></div>
+                        <div id="b11" class="hand2"></div>
+                    </div>
+                    <!-- 2 -->
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a12" class="hand1"></div>
+                        <div id="b12" class="hand2"></div>
+                    </div>
+                    <!-- 3 -->
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a13" class="hand1"></div>
+                        <div id="b13" class="hand2"></div>
+                    </div>
+                    <!-- 4 -->
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a14" class="hand1"></div>
+                        <div id="b14" class="hand2"></div>
+                    </div>
+                    <!-- 5 -->
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a15" class="hand1"></div>
+                        <div id="b15" class="hand2"></div>
+                    </div>
+                    <!-- 6 -->
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a16" class="hand1"></div>
+                        <div id="b16" class="hand2"></div>
+                    </div>
+                    <!-- 7 -->
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a17" class="hand1"></div>
+                        <div id="b17" class="hand2"></div>
+                    </div>
+                    <!-- 8 -->
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a18" class="hand1"></div>
+                        <div id="b18" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row2.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a21" class="hand1"></div>
+                        <div id="b21" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a22" class="hand1"></div>
+                        <div id="b22" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a23" class="hand1"></div>
+                        <div id="b23" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a24" class="hand1"></div>
+                        <div id="b24" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a25" class="hand1"></div>
+                        <div id="b25" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a26" class="hand1"></div>
+                        <div id="b26" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a27" class="hand1"></div>
+                        <div id="b27" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a28" class="hand1"></div>
+                        <div id="b28" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row3.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a31" class="hand1"></div>
+                        <div id="b31" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a32" class="hand1"></div>
+                        <div id="b32" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a33" class="hand1"></div>
+                        <div id="b33" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a34" class="hand1"></div>
+                        <div id="b34" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a35" class="hand1"></div>
+                        <div id="b35" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a36" class="hand1"></div>
+                        <div id="b36" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a37" class="hand1"></div>
+                        <div id="b37" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a38" class="hand1"></div>
+                        <div id="b38" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row4.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a41" class="hand1"></div>
+                        <div id="b41" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a42" class="hand1"></div>
+                        <div id="b42" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a43" class="hand1"></div>
+                        <div id="b43" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a44" class="hand1"></div>
+                        <div id="b44" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a45" class="hand1"></div>
+                        <div id="b45" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a46" class="hand1"></div>
+                        <div id="b46" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a47" class="hand1"></div>
+                        <div id="b47" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a48" class="hand1"></div>
+                        <div id="b48" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row5.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a51" class="hand1"></div>
+                        <div id="b51" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a52" class="hand1"></div>
+                        <div id="b52" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a53" class="hand1"></div>
+                        <div id="b53" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a54" class="hand1"></div>
+                        <div id="b54" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a55" class="hand1"></div>
+                        <div id="b55" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a56" class="hand1"></div>
+                        <div id="b56" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a57" class="hand1"></div>
+                        <div id="b57" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/30 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a58" class="hand1"></div>
+                        <div id="b58" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row6.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a61" class="hand1"></div>
+                        <div id="b61" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a62" class="hand1"></div>
+                        <div id="b62" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a63" class="hand1"></div>
+                        <div id="b63" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a64" class="hand1"></div>
+                        <div id="b64" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a65" class="hand1"></div>
+                        <div id="b65" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a66" class="hand1"></div>
+                        <div id="b66" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a67" class="hand1"></div>
+                        <div id="b67" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a68" class="hand1"></div>
+                        <div id="b68" class="hand2"></div>
+                    </div>
+                </div>
             </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a12" class="hand1"></div>
-                <div id="b12" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a13" class="hand1"></div>
-                <div id="b13" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a14" class="hand1"></div>
-                <div id="b14" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a15" class="hand1"></div>
-                <div id="b15" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a16" class="hand1"></div>
-                <div id="b16" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a17" class="hand1"></div>
-                <div id="b17" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a18" class="hand1"></div>
-                <div id="b18" class="hand2"></div>
+            <div id="box2" class="grid gap-1">
+
+                <!-- row7.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a71" class="hand1"></div>
+                        <div id="b71" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a72" class="hand1"></div>
+                        <div id="b72" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a73" class="hand1"></div>
+                        <div id="b73" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a74" class="hand1"></div>
+                        <div id="b74" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a75" class="hand1"></div>
+                        <div id="b75" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a76" class="hand1"></div>
+                        <div id="b76" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a77" class="hand1"></div>
+                        <div id="b77" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a78" class="hand1"></div>
+                        <div id="b78" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row8.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a81" class="hand1"></div>
+                        <div id="b81" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a82" class="hand1"></div>
+                        <div id="b82" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a83" class="hand1"></div>
+                        <div id="b83" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a84" class="hand1"></div>
+                        <div id="b84" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a85" class="hand1"></div>
+                        <div id="b85" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a86" class="hand1"></div>
+                        <div id="b86" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a87" class="hand1"></div>
+                        <div id="b87" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a88" class="hand1"></div>
+                        <div id="b88" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row9.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a91" class="hand1"></div>
+                        <div id="b91" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a92" class="hand1"></div>
+                        <div id="b92" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a93" class="hand1"></div>
+                        <div id="b93" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a94" class="hand1"></div>
+                        <div id="b94" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a95" class="hand1"></div>
+                        <div id="b95" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a96" class="hand1"></div>
+                        <div id="b96" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a97" class="hand1"></div>
+                        <div id="b97" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="a98" class="hand1"></div>
+                        <div id="b98" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row10.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa1" class="hand1"></div>
+                        <div id="ba1" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa2" class="hand1"></div>
+                        <div id="ba2" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa3" class="hand1"></div>
+                        <div id="ba3" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa4" class="hand1"></div>
+                        <div id="ba4" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa5" class="hand1"></div>
+                        <div id="ba5" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa6" class="hand1"></div>
+                        <div id="ba6" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa7" class="hand1"></div>
+                        <div id="ba7" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="aa8" class="hand1"></div>
+                        <div id="ba8" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row11.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab1" class="hand1"></div>
+                        <div id="bb1" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab2" class="hand1"></div>
+                        <div id="bb2" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab3" class="hand1"></div>
+                        <div id="bb3" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab4" class="hand1"></div>
+                        <div id="bb4" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab5" class="hand1"></div>
+                        <div id="bb5" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab6" class="hand1"></div>
+                        <div id="bb6" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab7" class="hand1"></div>
+                        <div id="bb7" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ab8" class="hand1"></div>
+                        <div id="bb8" class="hand2"></div>
+                    </div>
+                </div>
+
+                <!-- row12.............................................................. -->
+                <div class="clock-row grid grid-cols-8 gap-1">
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac1" class="hand1"></div>
+                        <div id="bc1" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac2" class="hand1"></div>
+                        <div id="bc2" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac3" class="hand1"></div>
+                        <div id="bc3" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac4" class="hand1"></div>
+                        <div id="bc4" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac5" class="hand1"></div>
+                        <div id="bc5" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac6" class="hand1"></div>
+                        <div id="bc6" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac7" class="hand1"></div>
+                        <div id="bc7" class="hand2"></div>
+                    </div>
+                    <div
+                        class="clock aspect-square h-max rounded-full  shadow-2xl shadow-white/20 shadow-inner relative">
+                        <div class="centre"></div>
+                        <div id="ac8" class="hand1"></div>
+                        <div id="bc8" class="hand2"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- row2.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a21" class="hand1"></div>
-                <div id="b21" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a22" class="hand1"></div>
-                <div id="b22" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a23" class="hand1"></div>
-                <div id="b23" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a24" class="hand1"></div>
-                <div id="b24" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a25" class="hand1"></div>
-                <div id="b25" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a26" class="hand1"></div>
-                <div id="b26" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a27" class="hand1"></div>
-                <div id="b27" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a28" class="hand1"></div>
-                <div id="b28" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row3.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a31" class="hand1"></div>
-                <div id="b31" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a32" class="hand1"></div>
-                <div id="b32" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a33" class="hand1"></div>
-                <div id="b33" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a34" class="hand1"></div>
-                <div id="b34" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a35" class="hand1"></div>
-                <div id="b35" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a36" class="hand1"></div>
-                <div id="b36" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a37" class="hand1"></div>
-                <div id="b37" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a38" class="hand1"></div>
-                <div id="b38" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row4.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a41" class="hand1"></div>
-                <div id="b41" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a42" class="hand1"></div>
-                <div id="b42" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a43" class="hand1"></div>
-                <div id="b43" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a44" class="hand1"></div>
-                <div id="b44" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a45" class="hand1"></div>
-                <div id="b45" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a46" class="hand1"></div>
-                <div id="b46" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a47" class="hand1"></div>
-                <div id="b47" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a48" class="hand1"></div>
-                <div id="b48" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row5.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a51" class="hand1"></div>
-                <div id="b51" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a52" class="hand1"></div>
-                <div id="b52" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a53" class="hand1"></div>
-                <div id="b53" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a54" class="hand1"></div>
-                <div id="b54" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a55" class="hand1"></div>
-                <div id="b55" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a56" class="hand1"></div>
-                <div id="b56" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a57" class="hand1"></div>
-                <div id="b57" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a58" class="hand1"></div>
-                <div id="b58" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row6.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a61" class="hand1"></div>
-                <div id="b61" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a62" class="hand1"></div>
-                <div id="b62" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a63" class="hand1"></div>
-                <div id="b63" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a64" class="hand1"></div>
-                <div id="b64" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a65" class="hand1"></div>
-                <div id="b65" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a66" class="hand1"></div>
-                <div id="b66" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a67" class="hand1"></div>
-                <div id="b67" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a68" class="hand1"></div>
-                <div id="b68" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row7.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a71" class="hand1"></div>
-                <div id="b71" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a72" class="hand1"></div>
-                <div id="b72" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a73" class="hand1"></div>
-                <div id="b73" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a74" class="hand1"></div>
-                <div id="b74" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a75" class="hand1"></div>
-                <div id="b75" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a76" class="hand1"></div>
-                <div id="b76" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a77" class="hand1"></div>
-                <div id="b77" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a78" class="hand1"></div>
-                <div id="b78" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row8.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a81" class="hand1"></div>
-                <div id="b81" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a82" class="hand1"></div>
-                <div id="b82" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a83" class="hand1"></div>
-                <div id="b83" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a84" class="hand1"></div>
-                <div id="b84" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a85" class="hand1"></div>
-                <div id="b85" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a86" class="hand1"></div>
-                <div id="b86" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a87" class="hand1"></div>
-                <div id="b87" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a88" class="hand1"></div>
-                <div id="b88" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row9.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a91" class="hand1"></div>
-                <div id="b91" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a92" class="hand1"></div>
-                <div id="b92" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a93" class="hand1"></div>
-                <div id="b93" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a94" class="hand1"></div>
-                <div id="b94" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a95" class="hand1"></div>
-                <div id="b95" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a96" class="hand1"></div>
-                <div id="b96" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a97" class="hand1"></div>
-                <div id="b97" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="a98" class="hand1"></div>
-                <div id="b98" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row10.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa1" class="hand1"></div>
-                <div id="ba1" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa2" class="hand1"></div>
-                <div id="ba2" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa3" class="hand1"></div>
-                <div id="ba3" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa4" class="hand1"></div>
-                <div id="ba4" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa5" class="hand1"></div>
-                <div id="ba5" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa6" class="hand1"></div>
-                <div id="ba6" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa7" class="hand1"></div>
-                <div id="ba7" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="aa8" class="hand1"></div>
-                <div id="ba8" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row11.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab1" class="hand1"></div>
-                <div id="bb1" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab2" class="hand1"></div>
-                <div id="bb2" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab3" class="hand1"></div>
-                <div id="bb3" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab4" class="hand1"></div>
-                <div id="bb4" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab5" class="hand1"></div>
-                <div id="bb5" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab6" class="hand1"></div>
-                <div id="bb6" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab7" class="hand1"></div>
-                <div id="bb7" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ab8" class="hand1"></div>
-                <div id="bb8" class="hand2"></div>
-            </div>
-        </div>
-        <!-- row12.............................................................. -->
-        <div class="clock-row">
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac1" class="hand1"></div>
-                <div id="bc1" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac2" class="hand1"></div>
-                <div id="bc2" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac3" class="hand1"></div>
-                <div id="bc3" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac4" class="hand1"></div>
-                <div id="bc4" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac5" class="hand1"></div>
-                <div id="bc5" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac6" class="hand1"></div>
-                <div id="bc6" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac7" class="hand1"></div>
-                <div id="bc7" class="hand2"></div>
-            </div>
-            <div class="clock-column clock">
-                <div class="centre"></div>
-                <div id="ac8" class="hand1"></div>
-                <div id="bc8" class="hand2"></div>
-            </div>
-        </div>
+
     </div>
-    <!-- change -->
-<h4> by<a href="https://www.linkedin.com/in/swarnim-varchaswa-59a086228/" > <strong>Swarnim Varchaswa </strong></a></h4>
 </body>
 
 </html>

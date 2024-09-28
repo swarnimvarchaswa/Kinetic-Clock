@@ -1,3 +1,47 @@
+function checkScreenOrientation() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const box = document.getElementById("box");
+
+  const aspectRatio = width / height;
+
+  // Check if width is greater than height (landscape)
+  if (width > height) {
+    box.classList.add("landscape");
+    box.classList.add("aspect-[16/6]");
+    box.classList.add("grid-cols-2");
+    // box.classList.remove("aspect-[8/12]");
+
+    if (aspectRatio > 16 / 6) {
+      // This condition can be adapted for your layout
+      box.classList.add("h-full");
+      // box.classList.remove("w-full");
+    } else {
+      box.classList.add("w-full");
+      // box.classList.remove("h-full");
+    }
+  } else {
+    box.classList.add("aspect-[8/12]");
+    box.classList.add("grid-cols-1");
+    // box.classList.remove("aspect-[16/6]");
+
+    if (aspectRatio < 8 / 12) {
+      // This condition can be adapted for your layout
+      box.classList.add("w-full");
+      // box.classList.remove("h-full");
+    } else {
+      box.classList.add("h-full");
+      // box.classList.remove("w-full");
+    }
+  }
+}
+
+// Run the function when the page loads
+window.onload = checkScreenOrientation;
+
+// Run the function on window resize
+window.onresize = checkScreenOrientation;
+
 setInterval(function clck() {
   const d = new Date();
   let hour = d.getHours();
@@ -120,7 +164,7 @@ setInterval(function clck() {
       break;
     case "0":
     case "10":
-    case "11": 
+    case "11":
     case "12":
     case "22":
     case "23":
@@ -1224,7 +1268,7 @@ setInterval(function clck() {
 
 setInterval(function clck() {
   const d = new Date();
-  let hour = (d.getHours() % 12);
+  let hour = d.getHours() % 12;
 
   switch (hour) {
     case 10:
@@ -2232,7 +2276,7 @@ setInterval(function clck() {
   // let hour_s = hour.toString();
   // let hour_one = hour_s[0];
   // let hour_two = hour_s[1];
-  let minute = String(d.getMinutes()).padStart(2, '0');
+  let minute = String(d.getMinutes()).padStart(2, "0");
   let minute_s = minute.toString();
   let minute_one = minute_s[0];
   let minute_two = minute_s[1];
@@ -3247,7 +3291,7 @@ setInterval(function clck() {
 
 setInterval(function clck() {
   const d = new Date();
-  let minute = String(d.getMinutes()).padStart(2, '0');
+  let minute = String(d.getMinutes()).padStart(2, "0");
   let minute_s = minute.toString();
   let minute_two = minute_s[1];
 
